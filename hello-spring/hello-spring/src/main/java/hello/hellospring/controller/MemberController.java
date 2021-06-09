@@ -10,7 +10,7 @@ public class MemberController {
     private final MemberService memberService;
 
     @Autowired
-    public MemberController(MemberService memberService) {
+    public MemberController(MemberService memberService) { //dependency injection (constructor injection)
         this.memberService = memberService;
     }
 }

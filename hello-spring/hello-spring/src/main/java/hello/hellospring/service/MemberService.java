@@ -10,12 +10,10 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {  //dependency injection 여기 클래스에서 직접 new 하지 않고 외부에거 채워줌
         this.memberRepository = memberRepository;
     }
